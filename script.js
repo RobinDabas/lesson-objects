@@ -30,3 +30,17 @@ cityBangkok['province'] = 'Krung Thep Mahan Nakhon';
 cityBangkok['expats'] = '300,000'
 cityBangkok = cityBangkok.weather;
 console.log(cityBangkok)
+
+//Bracket notation, evaluate expressions - Arrays, For Loops and Objects utillized
+
+
+let arrLearnJavascript = ['functions', 'arrays', 'objects'];
+let code = {
+  functions: 99,
+  arrays: 60,
+  objects: 90
+}
+
+for (let i = 0; i < arrLearnJavascript.length; ++i) {
+  console.log(code[arrLearnJavascript[i]]);
+}
