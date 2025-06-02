@@ -44,3 +44,11 @@ let code = {
 for (let i = 0; i < arrLearnJavascript.length; ++i) {
   console.log(code[arrLearnJavascript[i]]);
 }
+
+//Arrays are objects
+
+let frutas = [];
+  frutas.push('piña');
+  frutas.push('guineo');
+  frutas.pop();
+console.log(frutas);
