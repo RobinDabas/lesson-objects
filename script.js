@@ -74,3 +74,11 @@ console.log(arrSimple);
 
 let miNumero = Math.pow(5, 5);
 console.log(miNumero);
+
+
+let x = 6.1768787878;
+let y = 5;
+let z;
+
+z = Math.trunc(x)
+console.log(z);
