@@ -82,3 +82,7 @@ let z;
 
 z = Math.trunc(x)
 console.log(z);
+
+
+//Math.random often used for games, simulations and random selections
+console.log(Math.random());
