@@ -68,3 +68,9 @@ function arrayConstructor(uno, dos, tres) {
 
 let arrSimple = arrayConstructor('uno', 'dos', 'tres');
 console.log(arrSimple);
+
+
+//Math object
+
+let miNumero = Math.pow(5, 5);
+console.log(miNumero);
