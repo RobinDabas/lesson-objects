@@ -50,5 +50,21 @@ for (let i = 0; i < arrLearnJavascript.length; ++i) {
 let frutas = [];
   frutas.push('piña');
   frutas.push('guineo');
+  frutas.push('maracuyá')
   frutas.pop();
 console.log(frutas);
+
+
+// Take all the arguments and push them into an array
+
+function arrayConstructor(uno, dos, tres) {
+  let arr = [];
+  arr.push(uno);
+  arr.push(dos);
+  arr.push(tres);
+  console.log(arr);
+  return arr;
+}
+
+let arrSimple = arrayConstructor('uno', 'dos', 'tres');
+console.log(arrSimple);
