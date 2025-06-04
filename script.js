@@ -86,3 +86,10 @@ console.log(z);
 
 //Math.random often used for games, simulations and random selections
 console.log(Math.random());
+
+
+//
+let saludar = 'Hola';
+let usario = 'Marcos';
+
+console.log(saludar + usario);
