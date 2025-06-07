@@ -93,3 +93,46 @@ let saludar = 'Hola';
 let usario = 'Marcos';
 
 console.log(saludar + usario);
+
+
+var vegetales = ['perejil', 'cebolla', 'zanahoria']
+
+//console.log(vegetales.length)
+//console.log(vegetales[1])
+
+for (c = 0; c < vegetales.length; ++c) {
+  console.log(vegetales[c]);
+}
+
+
+let saludá = 'Quiubo ';
+let nombre = 'Roberto';
+
+console.log(saludá + nombre);
+
+console.log(saludá.concat(nombre));
+
+
+//Exercise 01
+let ropa = [];
+
+ropa.push('camiseta');
+ropa.push('pantalones vaqueros');
+ropa.push('zapatillas para correr');
+ropa.push('calzoncillo');
+ropa.push('sudadera');
+//ropa.pop();
+
+console.log(ropa);
+
+//Exercise 02
+
+let autoFavorito = {};
+
+autoFavorito.color = 'plata';
+autoFavorito.marca = 'Lamborghini';
+autoFavorito.versión01 = 'Aventador';
+autoFavorito.versión02 = 'Murciélago';
+console.log(autoFavorito);
+
+
