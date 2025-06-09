@@ -95,6 +95,8 @@ let usario = 'Marcos';
 console.log(saludar + usario);
 
 
+//June.07.2025
+
 var vegetales = ['perejil', 'cebolla', 'zanahoria']
 
 //console.log(vegetales.length)
@@ -135,4 +137,12 @@ autoFavorito.versión01 = 'Aventador';
 autoFavorito.versión02 = 'Murciélago';
 console.log(autoFavorito);
 
+
+
+//Catch block
+try {
+  let e = noExisteTalCosa
+} catch (error) {
+  console.log('Error encontrado');
+}
 
