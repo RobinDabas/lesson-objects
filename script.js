@@ -146,3 +146,12 @@ try {
   console.log('Error encontrado');
 }
 
+
+function sumaDosNumeros(a, b) {
+  try {
+      console.log(a + b);
+  } catch(err) {
+    console.log(err)
+  }
+}
+sumaDosNumeros(5, '5');
