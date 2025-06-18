@@ -218,6 +218,35 @@ addedIncome(2500, 3000)
 console.log('Estoy muy orgulloso de vos. ¡Sos lo máximo!')
 
 
+function buscadorDeLetras (palabra, match) {
+  let condition1 = typeof(palabra) == 'string' && palabra.length >= 2;
+  let condition2 = typeof(match) == 'string' && match.length == 1;
+  if (condition1 && condition2) {
+  for (let i = 0; i <= palabra.length; ++i) {
+    if (palabra[i] == match) {
+      console.log('Encontraste', match, 'en', i)
+    } else {
+      console.log('No hay match', i)
+    } 
+  }
+} else {
+  console.log('Please pass correct arguments to the function.')
+}
+}
+buscadorDeLetras([], [])
+buscadorDeLetras('gata', 'g')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
