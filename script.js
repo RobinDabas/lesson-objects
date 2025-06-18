@@ -155,3 +155,87 @@ function sumaDosNumeros(a, b) {
   }
 }
 sumaDosNumeros(5, '5');
+
+
+//Exercise Error Prevention
+//Try block
+
+try {
+  function addUpNumbers(a, b) {
+    console.log(Number(a) + Number(b))
+  } 
+  addUpNumbers(5, '6');
+} catch (err) {
+    console.log(err);
+  }
+
+
+//Extra practice
+
+try {
+  function addYears(x, y) {
+    console.log(Number(x) + Number(y))
+  } 
+  addYears('15', '20');
+} catch (err) {
+  console.log(err)
+}
+
+
+///Typeof 
+
+function twoNumbersAdded(m, n) {
+  try {
+   if (typeof(m) != 'number') {
+    throw new ReferenceError('The first argument is not a number.')
+   } else if (typeof(n) != 'number') {
+    throw new ReferenceError('The second argument is not a number.')
+   } else {
+    console.log(m + n)
+   }
+  } catch (err) {
+    console.log(err)
+  }
+}
+twoNumbersAdded(50, 500);
+
+//Extra practice to reinforce the concepts of try catch blocks and typeof
+
+function addedIncome(c, d) {
+  try {
+    if (typeof(c) != 'number') {
+      throw new ReferenceError('El primer argumento no es un ingreso')
+    } else if (typeof(d) != 'number') {
+      throw new ReferenceError('El segundo argumento no es un ingreso')
+    } else {
+      console.log('Vos ganás $' + (c + d) + '.00' + ' al mes.')
+    }
+  } catch (err) {
+    console.log(err)
+  }
+}
+addedIncome(2500, 3000)
+console.log('Estoy muy orgulloso de vos. ¡Sos lo máximo!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
