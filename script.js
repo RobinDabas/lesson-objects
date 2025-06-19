@@ -222,7 +222,7 @@ function buscadorDeLetras (palabra, match) {
   let condition1 = typeof(palabra) == 'string' && palabra.length >= 2;
   let condition2 = typeof(match) == 'string' && match.length == 1;
   if (condition1 && condition2) {
-  for (let i = 0; i <= palabra.length; ++i) {
+  for (let i = 0; i < palabra.length; ++i) {
     if (palabra[i] == match) {
       console.log('Encontraste', match, 'en', i)
     } else {
@@ -237,6 +237,50 @@ buscadorDeLetras([], [])
 buscadorDeLetras('gata', 'g')
 
 
+//Grok practice
+function apaKabar(nama) {
+  if (typeof nama === 'string' && nama.length > 0) {
+    console.log('Apa khabar ' + nama + '!')
+  } else {
+    console.log('Sila berikan nama yang sah.')
+  }
+}
+apaKabar(5);
+
+
+
+//Grok blind practice
+
+function oláComoVai(nome) {
+  if (typeof nome == 'string' && nome.length > 0) {
+    console.log('Olá, ' + nome + ' como vai?')
+  } else {
+    console.log('Forneça um nome válido.')
+  }
+}
+
+oláComoVai('Gilberto');
+
+
+//Recreating the defense programming example
+
+function letterFinder(word, match) {
+  let isWordValid = typeof word === 'string' && word.length >= 2;
+  let isMatchValid = typeof match === 'string' && match.length === 1;
+  if (isWordValid && isMatchValid) {
+    for (let k = 0; k <= word.length; ++k) {
+      if (word[k] === match) {
+        console.log('Found the ' + match + ' at', k)
+      } else {
+        console.log('---No match found' + k)
+      }
+    } 
+  } else {
+      console.log('Please pass correct arguments to the function.')
+    }
+}
+
+letterFinder('libya', 'i')
 
 
 
